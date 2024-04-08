@@ -58,7 +58,7 @@ main {
     display: flex;
     flex-direction: column; /* Arrange items vertically */
     height: 100%; /* Example height */
-    border: 1px solid #ccc; /* Just for visualization */
+    border: 1px solid red; /* Just for visualization */
     margin-left: 10%;
     margin-right: 10%;
 }
