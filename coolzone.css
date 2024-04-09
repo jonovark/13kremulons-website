@@ -61,19 +61,29 @@ li:hover {
 
 
 main {
+
     display: flex;
-    height: 100%;
-    width: 1024;
-    //border: 1px solid white;
-    align-items: flex-start;
-    justify-content:space-evenly;
-    margin-top: 2%;
-    margin-right: 20%;
-    margin-left: 20%
-    
-    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 20px 0 20px;
 
 }
+
+.box {
+    border: solid 1px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main02 {
+
+    height: 1024;
+    width: 1024;
+    margin-top: 50px;
+}
+
 
 h1 {
     font-family: 'Power Slime', sans-serif;                       
