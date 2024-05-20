@@ -58,7 +58,6 @@ main {
     display: flex;
     flex-direction: column; /* Arrange items vertically */
     height: 100%; /* Example height */
-    border: 1px solid red; /* Just for visualization */
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -102,6 +101,10 @@ main {
 .film01:hover {
     transition: all 0.5s ease-in;
     background-color: firebrick;
+}
+
+p {
+    width: 50%;
 }
 
 footer {

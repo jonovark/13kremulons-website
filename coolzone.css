@@ -55,33 +55,33 @@ li:hover {
 }
 
 
-
-
-
-
-
 main {
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
     margin: 40px 20px 0 20px;
 
 }
 
-.box {
-    border: solid 1px white;
+.middlebox {
+    width: 500px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.main02 {
-
-    height: 1024;
-    width: 1024;
-    margin-top: 50px;
+.sidebox {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -103,5 +103,4 @@ footer {
     margin-top: 10px;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
 }
