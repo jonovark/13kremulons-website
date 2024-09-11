@@ -1,6 +1,10 @@
 body {
-    background-image: url("images/checkerBG.mp4");
+    background-image: url("images/checkerbg_still.png");
+    background-repeat: repeat; /* Tiling the background image */
+    background-size: 200px 200px; /* Adjust the size of each tile */
+    background-color: #f0f0f0; /* Optional: background color if image doesn't cover */
 }
+
 
 .container {
     margin-left: auto;
@@ -62,7 +66,6 @@ main {
     height: 100%; /* Example height */
     margin-left: 10%;
     margin-right: 10%;
-    width: 75%;
 }
 
 
@@ -71,9 +74,7 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 20px;
     margin-top: 10px;
-    margin-right: 20px;
     background-color: darkorange; 
     border: 3px solid firebrick;
     color: black; 
@@ -82,22 +83,16 @@ main {
 .film01img {
     display: flex;
     justify-content: space-between;
-    margin-left: 7px;
-    margin-right: 20px;
     color: black; 
 }
 .film01text {
 
+    width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-left: 50%;
-    margin-top: 20px;
-    margin-right: 20px;
-    padding: 10px;
+    margin-left: 20px;
     color: black; 
-    font-family: 'Power Slime', sans-serif;    
+    font-family: 'Power Slime', sans-serif; 
 }
 .film01:hover {
     transition: all 0.5s ease-in;
@@ -114,3 +109,23 @@ footer {
     width: 1024;
 }
 
+@media (max-width: 1000px) {
+
+    header {
+
+        width: 400px;
+    }
+
+    main {
+        justify-content: center;
+        flex-direction: column;
+        height: 100%; /* Example height */
+        width: 500px;
+    }
+
+    .film01 {
+        width: 500px;
+        flex-direction: column;
+    }
+
+}
