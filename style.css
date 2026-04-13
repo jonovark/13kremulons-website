@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/power-slime');
+
 body {
     background-image: url("images/checkerbg_still.png");
     background-repeat: repeat;
@@ -47,9 +49,16 @@ nav {
 
 .navbar-links {
     width: 100%;
-    color: black;
-    font-family: 'Power Slime', sans-serif;
-    font-size: 1.8rem;
+}
+
+.navbar-links img {
+    height: 60px;
+    width: auto;
+    transition: all 0.25s ease-in;
+}
+
+.navbar-links img:hover {
+    transform: scale(1.3);
 }
 
 
@@ -57,28 +66,25 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
+    gap: 40px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
-    padding: 6px 12px;
-    border: 1px solid transparent;
-    border-radius: 6px;
-}
-
-li:hover {
-    transition: all 0.25s ease-in;
-    background-color: rgba(255, 0, 0, 0.2);
-    border-color: rgba(255, 0, 0, 0.4);
-}
 
 a {
     text-decoration: none;
     color: black;
     font-size: 3rem;
+    transition: all 0.25s ease-out-in;
+
+}
+
+a:hover {
+
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 main {
@@ -87,7 +93,7 @@ main {
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .middlebox,
@@ -102,7 +108,7 @@ main {
 }
 
 .middlebox {
-    max-width: 700px;
+    max-width: 480px;
 }
 
 .sidebox {
@@ -133,9 +139,30 @@ h1 {
     flex-wrap: wrap;
 }
 
+.dogs {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+    background-color: violet;
+
+}
+
+.dogs img {
+    width: 150px;
+    height: 150px;
+
+}
+
 h2 {
     font-family: 'Power Slime', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
+    letter-spacing: 20px;
+
 }
 
 footer {
@@ -152,13 +179,18 @@ footer img {
     height: auto;
 }
 
+
+/*WAAAAAAAAAA EPIC MOBILE MODE!!!*/
+
+
 @media (min-width: 768px) {
-    .navbar-links {
-        font-size: 2.2rem;
+    .navbar-links img {
+        height: 50px;
     }
 
     main {
         flex-direction: row;
+
     }
 
     .middlebox {
@@ -172,11 +204,25 @@ footer img {
     h1 {
         font-size: 1.75rem;
     }
+
+    .dogs {
+        font-size: 1.75rem;
+    }
 }
 
 @media (max-width: 767px) {
-    .navbar-links {
-        font-size: 1.4rem;
+    header {
+        padding: 5px 0;
+    }
+
+    header img {
+        margin: 0 2px;
+        max-width: 120%;
+        max-height: 103px;
+    }
+
+    .navbar-links img {
+        height: 45px;
     }
 
     nav {
@@ -187,8 +233,27 @@ footer img {
         padding: 8px 10px;
     }
 
+    ul {
+        gap: 4px;
+    }
+
+    main {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .middlebox {
+        flex: 0 0 45%;
+    }
+
+    .sidebox {
+        flex: 0 0 20%;
+    }
+
     h1 {
         font-size: 1rem;
     }
+
+
 }
 
