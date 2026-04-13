@@ -47,9 +47,16 @@ nav {
 
 .navbar-links {
     width: 100%;
-    color: black;
-    font-family: 'Power Slime', sans-serif;
-    font-size: 1.8rem;
+}
+
+.navbar-links img {
+    height: 40px;
+    width: auto;
+    transition: all 0.25s ease-in;
+}
+
+.navbar-links img:hover {
+    transform: scale(1.1);
 }
 
 
@@ -72,7 +79,7 @@ li {
 li:hover {
     transition: all 0.25s ease-in;
     background-color: rgba(255, 0, 0, 0.2);
-    border-color: rgba(255, 0, 0, 0.4);
+  
 }
 
 a {
@@ -80,15 +87,20 @@ a {
     color: black;
     font-size: 3rem;
 }
-b {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-}
+
 
 h1 {
-    color: black;
-    font-size: 2.2rem;
+    display: flex;
+    border: 3px solid firebrick;
+    background-color: darkorange;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+    font-size: 1.1rem;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 main {
@@ -101,15 +113,19 @@ main {
     margin-right: 10%;
 }
 
+main a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .film01 {
-    width: 800px;
+    width: 550px;
     display: flex;
-    justify-content: flex-center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    background-color: darkorange; 
-    border: 3px solid firebrick;
     color: black; 
     font-family: 'Power Slime', sans-serif;
 }
@@ -119,11 +135,11 @@ main {
     color: black; 
 }
 .film01text {
-
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    align-items: center;
+    text-align: center;
     color: black; 
     font-family: 'Power Slime', sans-serif; 
 }
@@ -133,11 +149,45 @@ main {
 }
 
 p {
- width: 75%;
+ width: 100%;
 }
 
-footer {
+@media (min-width: 768px) {
+    .navbar-links img {
+        height: 50px;
+    }
+}
 
+@media (max-width: 767px) {
+    header {
+        padding: 5px 0;
+    }
+
+    header img {
+        margin: 0 2px;
+        max-width: 50%;
+        max-height: 60px;
+    }
+
+    .navbar-links img {
+        height: 35px;
+    }
+
+    nav {
+        padding: 4px 0;
+    }
+
+    li {
+        padding: 8px 10px;
+    }
+
+    ul {
+        gap: 4px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 1000px) {
